@@ -1,0 +1,39 @@
+#spring.data.mongodb.host=localhost
+#spring.data.mongodb.port=27017
+#spring.data.mongodb.database=localdb
+
+spring:
+##mongoDB config
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: localdb
+    kafka:
+     producer:
+        bootstrap-servers: localhost:9092
+        key-serializer: org.apache.kafka.common.serialization.StringSerializer
+        value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+##hateoas config
+  hateoas:
+    use-hal-as-default-json-media-type: false
+    
+## application
+  application:
+    name: CatererMicroServiceApplication
+  
+  appconfig:
+    cache:
+     liveseconds: 10000
+  main:
+    allow-bean-definition-overriding: true  
+    
+integration:
+    management:
+      default-logging-enabled: false
+      
+
+
+      

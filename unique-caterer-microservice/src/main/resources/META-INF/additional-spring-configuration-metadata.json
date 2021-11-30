@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "spring.appconfig.cache.liveseconds",
+  "type": "java.lang.Integer",
+  "description": "A description for 'spring.appconfig.cache.liveseconds'"
+}]}
